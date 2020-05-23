@@ -5,7 +5,6 @@ import android.os.Parcelable
 
 class TaskList(val name: String, val tasks: ArrayList<String> = ArrayList()) : Parcelable {
 
-    lateinit var fragment: TaskDetailFragment
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.createStringArrayList()!!
